@@ -29,6 +29,10 @@ struct ErrorHelper: ErrorHelperProtocol {
             return "Renderer cannot process changes"
         case .wrongAnchor:
             return "Wrong anchor type"
+        case .wrongNode:
+            return "Something goes wrong with a node on the scene"
+        case .incorrectBlendShapes:
+            return "Blend shapes inner error"
         case .unknown:
             return "Unknown error"
         }

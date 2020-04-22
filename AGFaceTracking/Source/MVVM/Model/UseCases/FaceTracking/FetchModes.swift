@@ -16,7 +16,8 @@ class FetchModes: FetchModesProtocol {
         
         return [FaceTrackingMode(name: "None", type: .none),
                 FaceTrackingMode(name: "3D content", type: .put3DmodelOnFace),
-                FaceTrackingMode(name: "2D texture", type: .put2DMaskOnFace)]
+                FaceTrackingMode(name: "2D texture", type: .put2DMaskOnFace),
+                FaceTrackingMode(name: "Blend shapes", type: .animateWithBlendShapes)]
     }()
     
     func all() -> AnyPublisher<[FaceTrackingMode], Never> {

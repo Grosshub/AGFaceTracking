@@ -162,4 +162,19 @@ extension FaceTrackingViewController: ARSCNViewDelegate {
         
         return self.faceNode
     }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        viewModel.processScene?.animateBlendShapes(for: renderer, anchor: anchor, mode: viewModel.currentFaceTrackingMode(), updatedNode: node)
+        .sink(receiveCompletion: { completion in
+
+            switch completion {
+            case .failure(let error):
+                AlertHelper().showAlert(error: error, showIn: self)
+            case .finished:
+                return
+            }
+
+        }, receiveValue: { _ in
+        }).cancel()
+    }
 }

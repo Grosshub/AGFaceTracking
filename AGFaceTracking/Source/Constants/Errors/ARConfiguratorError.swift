@@ -14,5 +14,7 @@ enum ARConfiguratorError: Error {
     case notSupported
     case wrongRenderer
     case wrongAnchor
+    case wrongNode
+    case incorrectBlendShapes
     case unknown
 }

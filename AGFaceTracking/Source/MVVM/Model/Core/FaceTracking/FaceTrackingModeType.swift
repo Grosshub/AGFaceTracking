@@ -13,4 +13,5 @@ enum FaceTrackingModeType {
     case none
     case put3DmodelOnFace
     case put2DMaskOnFace
+    case animateWithBlendShapes
 }

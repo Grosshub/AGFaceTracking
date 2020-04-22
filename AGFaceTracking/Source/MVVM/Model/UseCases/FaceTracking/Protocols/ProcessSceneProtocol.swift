@@ -19,4 +19,12 @@ protocol ProcessSceneProtocol: UseCaseProtocol {
     ///   - anchor: Face anchor
     ///   - mode: Specific face tracking mode
     func sceneKitNode(for renderer: SCNSceneRenderer, anchor: ARAnchor, mode: FaceTrackingMode?) -> AnyPublisher<SCNNode?, ARConfiguratorError>
+    
+    /// Animates a character with blend shapes
+    /// - Parameters:
+    ///   - renderer: SceneKit renderer
+    ///   - anchor: Face anchor
+    ///   - mode: Specific face tracking mode
+    ///   - updatedNode: Node that could be already added on the scene
+    func animateBlendShapes(for renderer: SCNSceneRenderer, anchor: ARAnchor, mode: FaceTrackingMode?, updatedNode: SCNNode?) -> AnyPublisher<Bool, ARConfiguratorError>
 }

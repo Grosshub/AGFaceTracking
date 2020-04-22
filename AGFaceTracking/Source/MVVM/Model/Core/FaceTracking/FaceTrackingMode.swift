@@ -29,6 +29,8 @@ class FaceTrackingMode {
             self.icon = UIImage(named: "mode_1")
         case .put2DMaskOnFace:
             self.icon = UIImage(named: "mode_2")
+        case .animateWithBlendShapes:
+            self.icon = UIImage(named: "mode_3")
         }
     }
 }
