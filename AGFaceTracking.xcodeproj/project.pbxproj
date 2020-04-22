@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8700E8D3244F81B700FF828D /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D2244F81B700FF828D /* UseCaseProtocol.swift */; };
+		8700E8D7244F837300FF828D /* ProcessSceneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */; };
+		8700E8D9244F83B200FF828D /* ConfigureSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */; };
+		8700E8DB244F86B600FF828D /* ProcessScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8DA244F86B600FF828D /* ProcessScene.swift */; };
+		8700E8DD244F86C500FF828D /* ConfigureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8DC244F86C500FF828D /* ConfigureSession.swift */; };
+		872524CA244CA83C002F6C40 /* FaceTrackingModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524C9244CA83C002F6C40 /* FaceTrackingModesView.swift */; };
+		872524D0244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524CF244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift */; };
+		872524D4244CAAD3002F6C40 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524D3244CAAD3002F6C40 /* ViewProtocol.swift */; };
+		872524DA244CAD3E002F6C40 /* FaceTrackingModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524D9244CAD3E002F6C40 /* FaceTrackingModeCell.swift */; };
+		872524DC244CAD86002F6C40 /* FaceTrackingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524DB244CAD86002F6C40 /* FaceTrackingMode.swift */; };
+		872524DF244CAE7B002F6C40 /* FaceTrackingModeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524DE244CAE7B002F6C40 /* FaceTrackingModeType.swift */; };
+		872524E2244CB943002F6C40 /* FaceTrackingModesSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524E1244CB943002F6C40 /* FaceTrackingModesSizing.swift */; };
+		872524E7244CC623002F6C40 /* FaceTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524E6244CC623002F6C40 /* FaceTrackingViewModel.swift */; };
+		872524EA244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524E9244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift */; };
+		872524EE244CC65C002F6C40 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524ED244CC65C002F6C40 /* ViewModelProtocol.swift */; };
+		872524F3244CCD09002F6C40 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524F2244CCD09002F6C40 /* CoordinatorProtocol.swift */; };
+		872524F5244CCD17002F6C40 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524F4244CCD17002F6C40 /* NavigationProtocol.swift */; };
+		872524F7244CCD2A002F6C40 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524F6244CCD2A002F6C40 /* AppCoordinator.swift */; };
+		872524FA244CCDAC002F6C40 /* FaceTrackingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524F9244CCDAC002F6C40 /* FaceTrackingCoordinator.swift */; };
+		872524FD244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524FC244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift */; };
+		8725250B244CDC20002F6C40 /* ARConfiguratorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725250A244CDC20002F6C40 /* ARConfiguratorError.swift */; };
+		87252511244CDCE5002F6C40 /* ErrorHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87252510244CDCE5002F6C40 /* ErrorHelperProtocol.swift */; };
+		87252513244CDD23002F6C40 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87252512244CDD23002F6C40 /* ErrorHelper.swift */; };
+		87429432244F882900289A08 /* FetchModesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87429431244F882900289A08 /* FetchModesProtocol.swift */; };
+		87429434244F888300289A08 /* FetchModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87429433244F888300289A08 /* FetchModes.swift */; };
+		87429436244FC89300289A08 /* ModeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87429435244FC89300289A08 /* ModeCellViewModel.swift */; };
+		87429438244FC8B900289A08 /* ModeCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87429437244FC8B900289A08 /* ModeCellViewModelProtocol.swift */; };
+		875E4CED244B90C9005AD7E7 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 875E4CEC244B90C9005AD7E7 /* Models.scnassets */; };
+		875E4CF0244B953F005AD7E7 /* SCNReferenceNode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E4CEF244B953F005AD7E7 /* SCNReferenceNode+Extension.swift */; };
+		877B82E0244B78420036B550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B82DF244B78420036B550 /* AppDelegate.swift */; };
+		877B82E2244B78420036B550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B82E1244B78420036B550 /* SceneDelegate.swift */; };
+		877B82E9244B78440036B550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877B82E8244B78440036B550 /* Assets.xcassets */; };
+		87823258244B79E80030A6EA /* FaceTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87823257244B79E80030A6EA /* FaceTrackingViewController.swift */; };
+		8782325B244B7A540030A6EA /* FaceTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782325A244B7A540030A6EA /* FaceTrackingView.swift */; };
+		8792481D244CE0A9002BF6B2 /* AlertHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */; };
+		8792481F244CE0C4002BF6B2 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792481E244CE0C4002BF6B2 /* AlertHelper.swift */; };
+		87924823244CEEB0002BF6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8700E8D2244F81B700FF828D /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessSceneProtocol.swift; sourceTree = "<group>"; };
+		8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSessionProtocol.swift; sourceTree = "<group>"; };
+		8700E8DA244F86B600FF828D /* ProcessScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessScene.swift; sourceTree = "<group>"; };
+		8700E8DC244F86C500FF828D /* ConfigureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSession.swift; sourceTree = "<group>"; };
+		872524C9244CA83C002F6C40 /* FaceTrackingModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingModesView.swift; sourceTree = "<group>"; };
+		872524CF244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewProtocol.swift; sourceTree = "<group>"; };
+		872524D3244CAAD3002F6C40 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		872524D9244CAD3E002F6C40 /* FaceTrackingModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingModeCell.swift; sourceTree = "<group>"; };
+		872524DB244CAD86002F6C40 /* FaceTrackingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingMode.swift; sourceTree = "<group>"; };
+		872524DE244CAE7B002F6C40 /* FaceTrackingModeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingModeType.swift; sourceTree = "<group>"; };
+		872524E1244CB943002F6C40 /* FaceTrackingModesSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingModesSizing.swift; sourceTree = "<group>"; };
+		872524E6244CC623002F6C40 /* FaceTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewModel.swift; sourceTree = "<group>"; };
+		872524E9244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewModelProtocol.swift; sourceTree = "<group>"; };
+		872524ED244CC65C002F6C40 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		872524F2244CCD09002F6C40 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		872524F4244CCD17002F6C40 /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		872524F6244CCD2A002F6C40 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		872524F9244CCDAC002F6C40 /* FaceTrackingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingCoordinator.swift; sourceTree = "<group>"; };
+		872524FC244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8725250A244CDC20002F6C40 /* ARConfiguratorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARConfiguratorError.swift; sourceTree = "<group>"; };
+		87252510244CDCE5002F6C40 /* ErrorHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelperProtocol.swift; sourceTree = "<group>"; };
+		87252512244CDD23002F6C40 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		87429431244F882900289A08 /* FetchModesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchModesProtocol.swift; sourceTree = "<group>"; };
+		87429433244F888300289A08 /* FetchModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchModes.swift; sourceTree = "<group>"; };
+		87429435244FC89300289A08 /* ModeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCellViewModel.swift; sourceTree = "<group>"; };
+		87429437244FC8B900289A08 /* ModeCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		875E4CEC244B90C9005AD7E7 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		875E4CEF244B953F005AD7E7 /* SCNReferenceNode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNReferenceNode+Extension.swift"; sourceTree = "<group>"; };
+		877B82DC244B78420036B550 /* Face Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		877B82DF244B78420036B550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		877B82E1244B78420036B550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		877B82E8244B78440036B550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		877B82ED244B78440036B550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87823257244B79E80030A6EA /* FaceTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewController.swift; sourceTree = "<group>"; };
+		8782325A244B7A540030A6EA /* FaceTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingView.swift; sourceTree = "<group>"; };
+		8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelperProtocol.swift; sourceTree = "<group>"; };
+		8792481E244CE0C4002BF6B2 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		877B82D9244B78420036B550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8700E8CA244F812C00FF828D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				8700E8D0244F81A100FF828D /* Root */,
+				8700E8CC244F814800FF828D /* FaceTracking */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		8700E8CB244F813300FF828D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				872524DD244CAE69002F6C40 /* FaceTracking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8700E8CC244F814800FF828D /* FaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				8700E8CD244F814E00FF828D /* Protocols */,
+				87429433244F888300289A08 /* FetchModes.swift */,
+				8700E8DA244F86B600FF828D /* ProcessScene.swift */,
+				8700E8DC244F86C500FF828D /* ConfigureSession.swift */,
+			);
+			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		8700E8CD244F814E00FF828D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87429431244F882900289A08 /* FetchModesProtocol.swift */,
+				8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */,
+				8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8700E8D0244F81A100FF828D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8700E8D1244F81A600FF828D /* Protocols */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8700E8D1244F81A600FF828D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8700E8D2244F81B700FF828D /* UseCaseProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524C5244CA59B002F6C40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				877B82DF244B78420036B550 /* AppDelegate.swift */,
+				877B82E1244B78420036B550 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		872524C6244CA5AB002F6C40 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				877B82ED244B78440036B550 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		872524C7244CA6C0002F6C40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8700E8CB244F813300FF828D /* Core */,
+				8700E8CA244F812C00FF828D /* UseCases */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		872524C8244CA6CC002F6C40 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				872524EB244CC646002F6C40 /* Root */,
+				872524E5244CC614002F6C40 /* FaceTracking */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		872524CB244CA840002F6C40 /* FaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				872524CC244CA84D002F6C40 /* ViewController */,
+				872524CD244CA852002F6C40 /* View */,
+			);
+			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		872524CC244CA84D002F6C40 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				872524CE244CAA60002F6C40 /* Protocols */,
+				87823257244B79E80030A6EA /* FaceTrackingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		872524CD244CA852002F6C40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8782325A244B7A540030A6EA /* FaceTrackingView.swift */,
+				872524C9244CA83C002F6C40 /* FaceTrackingModesView.swift */,
+				872524D9244CAD3E002F6C40 /* FaceTrackingModeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		872524CE244CAA60002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524CF244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524D1244CAAC4002F6C40 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				872524D2244CAAC9002F6C40 /* Protocols */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		872524D2244CAAC9002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524D3244CAAD3002F6C40 /* ViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524DD244CAE69002F6C40 /* FaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				872524DB244CAD86002F6C40 /* FaceTrackingMode.swift */,
+				872524DE244CAE7B002F6C40 /* FaceTrackingModeType.swift */,
+			);
+			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		872524E0244CB916002F6C40 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8725250D244CDCBB002F6C40 /* Sizing */,
+				8725250C244CDCB5002F6C40 /* Errors */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		872524E5244CC614002F6C40 /* FaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				872524E8244CC633002F6C40 /* Protocols */,
+				872524E6244CC623002F6C40 /* FaceTrackingViewModel.swift */,
+				87429435244FC89300289A08 /* ModeCellViewModel.swift */,
+			);
+			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		872524E8244CC633002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524E9244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift */,
+				87429437244FC8B900289A08 /* ModeCellViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524EB244CC646002F6C40 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				872524EC244CC64A002F6C40 /* Protocols */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		872524EC244CC64A002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524ED244CC65C002F6C40 /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524EF244CCCE2002F6C40 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				872524F0244CCCE9002F6C40 /* Root */,
+				872524F8244CCD88002F6C40 /* FaceTracking */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		872524F0244CCCE9002F6C40 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				872524F1244CCCF8002F6C40 /* Protocols */,
+				872524F6244CCD2A002F6C40 /* AppCoordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		872524F1244CCCF8002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524F2244CCD09002F6C40 /* CoordinatorProtocol.swift */,
+				872524F4244CCD17002F6C40 /* NavigationProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		872524F8244CCD88002F6C40 /* FaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				872524FB244CCDD0002F6C40 /* Protocols */,
+				872524F9244CCDAC002F6C40 /* FaceTrackingCoordinator.swift */,
+			);
+			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		872524FB244CCDD0002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				872524FC244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87252502244CD609002F6C40 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8792481A244CE094002BF6B2 /* Alert */,
+				8725250E244CDCCB002F6C40 /* Error */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		87252503244CD60E002F6C40 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				872524C8244CA6CC002F6C40 /* ModelView */,
+				87823259244B7A480030A6EA /* View */,
+				872524C7244CA6C0002F6C40 /* Model */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		8725250C244CDCB5002F6C40 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				8725250A244CDC20002F6C40 /* ARConfiguratorError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		8725250D244CDCBB002F6C40 /* Sizing */ = {
+			isa = PBXGroup;
+			children = (
+				872524E1244CB943002F6C40 /* FaceTrackingModesSizing.swift */,
+			);
+			path = Sizing;
+			sourceTree = "<group>";
+		};
+		8725250E244CDCCB002F6C40 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8725250F244CDCD5002F6C40 /* Protocols */,
+				87252512244CDD23002F6C40 /* ErrorHelper.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		8725250F244CDCD5002F6C40 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87252510244CDCE5002F6C40 /* ErrorHelperProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		875E4CEB244B904B005AD7E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				877B82E8244B78440036B550 /* Assets.xcassets */,
+				875E4CEC244B90C9005AD7E7 /* Models.scnassets */,
+				87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		875E4CEE244B951F005AD7E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				875E4CEF244B953F005AD7E7 /* SCNReferenceNode+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		877B82D3244B78410036B550 = {
+			isa = PBXGroup;
+			children = (
+				877B82DD244B78420036B550 /* Products */,
+				877B82DE244B78420036B550 /* AGFaceTracking */,
+			);
+			sourceTree = "<group>";
+		};
+		877B82DD244B78420036B550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877B82DC244B78420036B550 /* Face Tracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877B82DE244B78420036B550 /* AGFaceTracking */ = {
+			isa = PBXGroup;
+			children = (
+				872524C5244CA59B002F6C40 /* App */,
+				872524C6244CA5AB002F6C40 /* Config */,
+				875E4CEB244B904B005AD7E7 /* Resources */,
+				87823255244B797D0030A6EA /* Source */,
+			);
+			path = AGFaceTracking;
+			sourceTree = "<group>";
+		};
+		87823255244B797D0030A6EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				872524EF244CCCE2002F6C40 /* Flow */,
+				872524E0244CB916002F6C40 /* Constants */,
+				875E4CEE244B951F005AD7E7 /* Utils */,
+				87252502244CD609002F6C40 /* Helpers */,
+				87252503244CD60E002F6C40 /* MVVM */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		87823259244B7A480030A6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				872524D1244CAAC4002F6C40 /* Root */,
+				872524CB244CA840002F6C40 /* FaceTracking */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8792481A244CE094002BF6B2 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				8792481B244CE09C002BF6B2 /* Protocols */,
+				8792481E244CE0C4002BF6B2 /* AlertHelper.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		8792481B244CE09C002BF6B2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		877B82DB244B78420036B550 /* AGFaceTrackingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 877B82F0244B78440036B550 /* Build configuration list for PBXNativeTarget "AGFaceTrackingApp" */;
+			buildPhases = (
+				877B82D8244B78420036B550 /* Sources */,
+				877B82D9244B78420036B550 /* Frameworks */,
+				877B82DA244B78420036B550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AGFaceTrackingApp;
+			productName = FaceTrackingTest;
+			productReference = 877B82DC244B78420036B550 /* Face Tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		877B82D4244B78410036B550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Alexey Gross";
+				TargetAttributes = {
+					877B82DB244B78420036B550 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 877B82D7244B78410036B550 /* Build configuration list for PBXProject "AGFaceTracking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 877B82D3244B78410036B550;
+			productRefGroup = 877B82DD244B78420036B550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				877B82DB244B78420036B550 /* AGFaceTrackingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		877B82DA244B78420036B550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87924823244CEEB0002BF6B2 /* LaunchScreen.storyboard in Resources */,
+				875E4CED244B90C9005AD7E7 /* Models.scnassets in Resources */,
+				877B82E9244B78440036B550 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		877B82D8244B78420036B550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875E4CF0244B953F005AD7E7 /* SCNReferenceNode+Extension.swift in Sources */,
+				872524FD244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift in Sources */,
+				87823258244B79E80030A6EA /* FaceTrackingViewController.swift in Sources */,
+				8792481F244CE0C4002BF6B2 /* AlertHelper.swift in Sources */,
+				872524D4244CAAD3002F6C40 /* ViewProtocol.swift in Sources */,
+				877B82E0244B78420036B550 /* AppDelegate.swift in Sources */,
+				872524E7244CC623002F6C40 /* FaceTrackingViewModel.swift in Sources */,
+				872524DC244CAD86002F6C40 /* FaceTrackingMode.swift in Sources */,
+				8700E8D3244F81B700FF828D /* UseCaseProtocol.swift in Sources */,
+				8725250B244CDC20002F6C40 /* ARConfiguratorError.swift in Sources */,
+				872524F7244CCD2A002F6C40 /* AppCoordinator.swift in Sources */,
+				872524EA244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift in Sources */,
+				872524EE244CC65C002F6C40 /* ViewModelProtocol.swift in Sources */,
+				8792481D244CE0A9002BF6B2 /* AlertHelperProtocol.swift in Sources */,
+				87429436244FC89300289A08 /* ModeCellViewModel.swift in Sources */,
+				872524F5244CCD17002F6C40 /* NavigationProtocol.swift in Sources */,
+				872524DF244CAE7B002F6C40 /* FaceTrackingModeType.swift in Sources */,
+				8700E8DB244F86B600FF828D /* ProcessScene.swift in Sources */,
+				872524FA244CCDAC002F6C40 /* FaceTrackingCoordinator.swift in Sources */,
+				8782325B244B7A540030A6EA /* FaceTrackingView.swift in Sources */,
+				872524F3244CCD09002F6C40 /* CoordinatorProtocol.swift in Sources */,
+				87429438244FC8B900289A08 /* ModeCellViewModelProtocol.swift in Sources */,
+				87252513244CDD23002F6C40 /* ErrorHelper.swift in Sources */,
+				872524D0244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift in Sources */,
+				8700E8DD244F86C500FF828D /* ConfigureSession.swift in Sources */,
+				87429434244F888300289A08 /* FetchModes.swift in Sources */,
+				877B82E2244B78420036B550 /* SceneDelegate.swift in Sources */,
+				872524DA244CAD3E002F6C40 /* FaceTrackingModeCell.swift in Sources */,
+				872524E2244CB943002F6C40 /* FaceTrackingModesSizing.swift in Sources */,
+				87429432244F882900289A08 /* FetchModesProtocol.swift in Sources */,
+				872524CA244CA83C002F6C40 /* FaceTrackingModesView.swift in Sources */,
+				8700E8D9244F83B200FF828D /* ConfigureSessionProtocol.swift in Sources */,
+				87252511244CDCE5002F6C40 /* ErrorHelperProtocol.swift in Sources */,
+				8700E8D7244F837300FF828D /* ProcessSceneProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		877B82EE244B78440036B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		877B82EF244B78440036B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		877B82F1244B78440036B550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2E9B4GL2W;
+				INFOPLIST_FILE = AGFaceTracking/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gross.test;
+				PRODUCT_NAME = "Face Tracking";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		877B82F2244B78440036B550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2E9B4GL2W;
+				INFOPLIST_FILE = AGFaceTracking/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gross.test;
+				PRODUCT_NAME = "Face Tracking";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		877B82D7244B78410036B550 /* Build configuration list for PBXProject "AGFaceTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877B82EE244B78440036B550 /* Debug */,
+				877B82EF244B78440036B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		877B82F0244B78440036B550 /* Build configuration list for PBXNativeTarget "AGFaceTrackingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				877B82F1244B78440036B550 /* Debug */,
+				877B82F2244B78440036B550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 877B82D4244B78410036B550 /* Project object */;
+}
