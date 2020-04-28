@@ -81,17 +81,18 @@ extension ProcessScene {
                 return Fail(error: .incorrectBlendShapes).eraseToAnyPublisher()
         }
         
-        let eyeLeftNode = updatedNode.childNode(withName: "eyeLeft", recursively: true)!
-        let eyeRightNode = updatedNode.childNode(withName: "eyeRight", recursively: true)!
-        let jawNode = updatedNode.childNode(withName: "jaw", recursively: true)!
-        
-        eyeLeftNode.scale.z = 1 - eyeBlinkLeft
-        eyeRightNode.scale.z = 1 - eyeBlinkRight
-        
-        let (min, max) = jawNode.boundingBox
-        let jawHeight: Float = max.y - min.y
-        
-        jawNode.position.y = originalJawY - jawHeight * jawOpen
+        if let eyeLeftNode = updatedNode.childNode(withName: "eyeLeft", recursively: true),
+            let eyeRightNode = updatedNode.childNode(withName: "eyeRight", recursively: true),
+            let jawNode = updatedNode.childNode(withName: "jaw", recursively: true) {
+
+            eyeLeftNode.scale.z = 1 - eyeBlinkLeft
+            eyeRightNode.scale.z = 1 - eyeBlinkRight
+            
+            let (min, max) = jawNode.boundingBox
+            let jawHeight: Float = max.y - min.y
+            
+            jawNode.position.y = originalJawY - jawHeight * jawOpen
+        }
         
         return CurrentValueSubject(true).eraseToAnyPublisher()
     }
