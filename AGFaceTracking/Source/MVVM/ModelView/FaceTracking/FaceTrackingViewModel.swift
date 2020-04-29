@@ -17,10 +17,15 @@ final class FaceTrackingViewModel: FaceTrackingViewModelProtocol {
     
     var coordinator: CoordinatorProtocol
     
+    var currentRenderer: RendererType = .sceneKit
+    
     // Use cases
-    var configureSession: ConfigureSessionProtocol?
+    var configureARSession: ConfigureARSessionProtocol?
     var processScene: ProcessSceneProtocol?
+    var configureMetalScene: ConfigureMetalSceneProtocol?
     private var fetchModes: FetchModesProtocol?
+    
+    private var modeSelectionStorage = Set<AnyCancellable>()
     
     lazy var modeCellViewModels: [ModeCellViewModelProtocol] = []
     
@@ -37,8 +42,11 @@ final class FaceTrackingViewModel: FaceTrackingViewModelProtocol {
             case (let useCase as ProcessSceneProtocol):
                 processScene = useCase
                 
-            case (let useCase as ConfigureSessionProtocol):
-                configureSession = useCase
+            case (let useCase as ConfigureARSessionProtocol):
+                configureARSession = useCase
+                
+            case (let useCase as ConfigureMetalSceneProtocol):
+                configureMetalScene = useCase
                 
             default:
                 print("Use Case is not specified")
@@ -53,6 +61,13 @@ final class FaceTrackingViewModel: FaceTrackingViewModelProtocol {
 
             guard let modes = self.modes else { return }
             for (index, mode) in modes.enumerated() {
+                
+                mode.$isSelected.sink { isSelected in
+                    if isSelected {
+                        // Track the current renderer when mode .isSelected property changed
+                        self.currentRenderer = mode.renderer
+                    }
+                }.store(in: &self.modeSelectionStorage)
                 
                 if index == 0 { mode.isSelected = true }
                 mode.index = index

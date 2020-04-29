@@ -10,8 +10,10 @@ import Foundation
 
 /// Types of available face tracking modes
 enum FaceTrackingModeType {
-    case none
+    case noEffect
     case put3DmodelOnFace
     case put2DMaskOnFace
     case animateWithBlendShapes
+    case removeBackground
+    case pictureBackground
 }

@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		8700E8D3244F81B700FF828D /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D2244F81B700FF828D /* UseCaseProtocol.swift */; };
 		8700E8D7244F837300FF828D /* ProcessSceneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */; };
-		8700E8D9244F83B200FF828D /* ConfigureSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */; };
+		8700E8D9244F83B200FF828D /* ConfigureARSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8D8244F83B200FF828D /* ConfigureARSessionProtocol.swift */; };
 		8700E8DB244F86B600FF828D /* ProcessScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8DA244F86B600FF828D /* ProcessScene.swift */; };
-		8700E8DD244F86C500FF828D /* ConfigureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8DC244F86C500FF828D /* ConfigureSession.swift */; };
+		8700E8DD244F86C500FF828D /* ConfigureARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700E8DC244F86C500FF828D /* ConfigureARSession.swift */; };
+		8710B7932459DF2500312A7F /* RendererType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710B7922459DF2500312A7F /* RendererType.swift */; };
+		8710B7952459EB2000312A7F /* MetalSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710B7942459EB2000312A7F /* MetalSessionError.swift */; };
 		872524CA244CA83C002F6C40 /* FaceTrackingModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524C9244CA83C002F6C40 /* FaceTrackingModesView.swift */; };
 		872524D0244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524CF244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift */; };
 		872524D4244CAAD3002F6C40 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872524D3244CAAD3002F6C40 /* ViewProtocol.swift */; };
@@ -41,17 +43,25 @@
 		877B82E9244B78440036B550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877B82E8244B78440036B550 /* Assets.xcassets */; };
 		87823258244B79E80030A6EA /* FaceTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87823257244B79E80030A6EA /* FaceTrackingViewController.swift */; };
 		8782325B244B7A540030A6EA /* FaceTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782325A244B7A540030A6EA /* FaceTrackingView.swift */; };
+		8791A2AC2459FB30003F6F89 /* MetalScenePreviewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8791A2AB2459FB30003F6F89 /* MetalScenePreviewProtocol.swift */; };
+		8791A2B4245A12E6003F6F89 /* PassThrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8791A2B3245A12E6003F6F89 /* PassThrough.metal */; };
 		8792481D244CE0A9002BF6B2 /* AlertHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */; };
 		8792481F244CE0C4002BF6B2 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792481E244CE0C4002BF6B2 /* AlertHelper.swift */; };
 		87924823244CEEB0002BF6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */; };
+		87AF45CB2459D1B00023D3E0 /* ConfigureMetalSceneProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF45CA2459D1B00023D3E0 /* ConfigureMetalSceneProtocol.swift */; };
+		87AF45CD2459D1F50023D3E0 /* ConfigureMetalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF45CC2459D1F50023D3E0 /* ConfigureMetalScene.swift */; };
+		87B339172459D4C000EA0616 /* CameraSessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B339162459D4C000EA0616 /* CameraSessionStatus.swift */; };
+		87B3391A2459D8E500EA0616 /* MetalScenePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B339192459D8E500EA0616 /* MetalScenePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8700E8D2244F81B700FF828D /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
 		8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessSceneProtocol.swift; sourceTree = "<group>"; };
-		8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSessionProtocol.swift; sourceTree = "<group>"; };
+		8700E8D8244F83B200FF828D /* ConfigureARSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureARSessionProtocol.swift; sourceTree = "<group>"; };
 		8700E8DA244F86B600FF828D /* ProcessScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessScene.swift; sourceTree = "<group>"; };
-		8700E8DC244F86C500FF828D /* ConfigureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSession.swift; sourceTree = "<group>"; };
+		8700E8DC244F86C500FF828D /* ConfigureARSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureARSession.swift; sourceTree = "<group>"; };
+		8710B7922459DF2500312A7F /* RendererType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererType.swift; sourceTree = "<group>"; };
+		8710B7942459EB2000312A7F /* MetalSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSessionError.swift; sourceTree = "<group>"; };
 		872524C9244CA83C002F6C40 /* FaceTrackingModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingModesView.swift; sourceTree = "<group>"; };
 		872524CF244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewProtocol.swift; sourceTree = "<group>"; };
 		872524D3244CAAD3002F6C40 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
@@ -83,9 +93,15 @@
 		877B82ED244B78440036B550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87823257244B79E80030A6EA /* FaceTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingViewController.swift; sourceTree = "<group>"; };
 		8782325A244B7A540030A6EA /* FaceTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackingView.swift; sourceTree = "<group>"; };
+		8791A2AB2459FB30003F6F89 /* MetalScenePreviewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalScenePreviewProtocol.swift; sourceTree = "<group>"; };
+		8791A2B3245A12E6003F6F89 /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelperProtocol.swift; sourceTree = "<group>"; };
 		8792481E244CE0C4002BF6B2 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87AF45CA2459D1B00023D3E0 /* ConfigureMetalSceneProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureMetalSceneProtocol.swift; sourceTree = "<group>"; };
+		87AF45CC2459D1F50023D3E0 /* ConfigureMetalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureMetalScene.swift; sourceTree = "<group>"; };
+		87B339162459D4C000EA0616 /* CameraSessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSessionStatus.swift; sourceTree = "<group>"; };
+		87B339192459D8E500EA0616 /* MetalScenePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalScenePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8700E8D0244F81A100FF828D /* Root */,
+				87AF45C82459D1840023D3E0 /* CameraSession */,
 				8700E8CC244F814800FF828D /* FaceTracking */,
 			);
 			path = UseCases;
@@ -111,6 +128,7 @@
 		8700E8CB244F813300FF828D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				87AF45CE2459D3CC0023D3E0 /* CameraSession */,
 				872524DD244CAE69002F6C40 /* FaceTracking */,
 			);
 			path = Core;
@@ -122,7 +140,7 @@
 				8700E8CD244F814E00FF828D /* Protocols */,
 				87429433244F888300289A08 /* FetchModes.swift */,
 				8700E8DA244F86B600FF828D /* ProcessScene.swift */,
-				8700E8DC244F86C500FF828D /* ConfigureSession.swift */,
+				8700E8DC244F86C500FF828D /* ConfigureARSession.swift */,
 			);
 			path = FaceTracking;
 			sourceTree = "<group>";
@@ -132,7 +150,7 @@
 			children = (
 				87429431244F882900289A08 /* FetchModesProtocol.swift */,
 				8700E8D6244F837300FF828D /* ProcessSceneProtocol.swift */,
-				8700E8D8244F83B200FF828D /* ConfigureSessionProtocol.swift */,
+				8700E8D8244F83B200FF828D /* ConfigureARSessionProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 			children = (
 				872524DB244CAD86002F6C40 /* FaceTrackingMode.swift */,
 				872524DE244CAE7B002F6C40 /* FaceTrackingModeType.swift */,
+				8710B7922459DF2500312A7F /* RendererType.swift */,
 			);
 			path = FaceTracking;
 			sourceTree = "<group>";
@@ -337,15 +356,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		87252502244CD609002F6C40 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				8792481A244CE094002BF6B2 /* Alert */,
-				8725250E244CDCCB002F6C40 /* Error */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		87252503244CD60E002F6C40 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				8725250A244CDC20002F6C40 /* ARConfiguratorError.swift */,
+				8710B7942459EB2000312A7F /* MetalSessionError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 		875E4CEB244B904B005AD7E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8791A2B2245A12B1003F6F89 /* Shaders */,
 				877B82E8244B78440036B550 /* Assets.xcassets */,
 				875E4CEC244B90C9005AD7E7 /* Models.scnassets */,
 				87924822244CEEB0002BF6B2 /* LaunchScreen.storyboard */,
@@ -402,7 +414,9 @@
 		875E4CEE244B951F005AD7E7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				875E4CEF244B953F005AD7E7 /* SCNReferenceNode+Extension.swift */,
+				8725250E244CDCCB002F6C40 /* Error */,
+				8792481A244CE094002BF6B2 /* Alert */,
+				87B339152459D47900EA0616 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -429,6 +443,7 @@
 				872524C5244CA59B002F6C40 /* App */,
 				872524C6244CA5AB002F6C40 /* Config */,
 				875E4CEB244B904B005AD7E7 /* Resources */,
+				87B3391B2459D9D400EA0616 /* Frameworks */,
 				87823255244B797D0030A6EA /* Source */,
 			);
 			path = AGFaceTracking;
@@ -440,7 +455,6 @@
 				872524EF244CCCE2002F6C40 /* Flow */,
 				872524E0244CB916002F6C40 /* Constants */,
 				875E4CEE244B951F005AD7E7 /* Utils */,
-				87252502244CD609002F6C40 /* Helpers */,
 				87252503244CD60E002F6C40 /* MVVM */,
 			);
 			path = Source;
@@ -453,6 +467,22 @@
 				872524CB244CA840002F6C40 /* FaceTracking */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8791A2AA2459FB22003F6F89 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8791A2AB2459FB30003F6F89 /* MetalScenePreviewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8791A2B2245A12B1003F6F89 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8791A2B3245A12E6003F6F89 /* PassThrough.metal */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 		8792481A244CE094002BF6B2 /* Alert */ = {
@@ -470,6 +500,56 @@
 				8792481C244CE0A9002BF6B2 /* AlertHelperProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87AF45C82459D1840023D3E0 /* CameraSession */ = {
+			isa = PBXGroup;
+			children = (
+				87AF45C92459D19B0023D3E0 /* Protocols */,
+				87AF45CC2459D1F50023D3E0 /* ConfigureMetalScene.swift */,
+			);
+			path = CameraSession;
+			sourceTree = "<group>";
+		};
+		87AF45C92459D19B0023D3E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				87AF45CA2459D1B00023D3E0 /* ConfigureMetalSceneProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87AF45CE2459D3CC0023D3E0 /* CameraSession */ = {
+			isa = PBXGroup;
+			children = (
+				87B339162459D4C000EA0616 /* CameraSessionStatus.swift */,
+			);
+			path = CameraSession;
+			sourceTree = "<group>";
+		};
+		87B339152459D47900EA0616 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				875E4CEF244B953F005AD7E7 /* SCNReferenceNode+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87B3391B2459D9D400EA0616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B3391C2459D9DE00EA0616 /* Metal */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		87B3391C2459D9DE00EA0616 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				8791A2AA2459FB22003F6F89 /* Protocols */,
+				87B339192459D8E500EA0616 /* MetalScenePreview.swift */,
+			);
+			path = Metal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,13 +626,16 @@
 				875E4CF0244B953F005AD7E7 /* SCNReferenceNode+Extension.swift in Sources */,
 				872524FD244CCDE8002F6C40 /* FaceTrackingCoordinatorProtocol.swift in Sources */,
 				87823258244B79E80030A6EA /* FaceTrackingViewController.swift in Sources */,
+				8710B7952459EB2000312A7F /* MetalSessionError.swift in Sources */,
 				8792481F244CE0C4002BF6B2 /* AlertHelper.swift in Sources */,
+				87AF45CB2459D1B00023D3E0 /* ConfigureMetalSceneProtocol.swift in Sources */,
 				872524D4244CAAD3002F6C40 /* ViewProtocol.swift in Sources */,
 				877B82E0244B78420036B550 /* AppDelegate.swift in Sources */,
 				872524E7244CC623002F6C40 /* FaceTrackingViewModel.swift in Sources */,
 				872524DC244CAD86002F6C40 /* FaceTrackingMode.swift in Sources */,
 				8700E8D3244F81B700FF828D /* UseCaseProtocol.swift in Sources */,
 				8725250B244CDC20002F6C40 /* ARConfiguratorError.swift in Sources */,
+				87B339172459D4C000EA0616 /* CameraSessionStatus.swift in Sources */,
 				872524F7244CCD2A002F6C40 /* AppCoordinator.swift in Sources */,
 				872524EA244CC641002F6C40 /* FaceTrackingViewModelProtocol.swift in Sources */,
 				872524EE244CC65C002F6C40 /* ViewModelProtocol.swift in Sources */,
@@ -561,20 +644,25 @@
 				872524F5244CCD17002F6C40 /* NavigationProtocol.swift in Sources */,
 				872524DF244CAE7B002F6C40 /* FaceTrackingModeType.swift in Sources */,
 				8700E8DB244F86B600FF828D /* ProcessScene.swift in Sources */,
+				87AF45CD2459D1F50023D3E0 /* ConfigureMetalScene.swift in Sources */,
+				8791A2B4245A12E6003F6F89 /* PassThrough.metal in Sources */,
+				8710B7932459DF2500312A7F /* RendererType.swift in Sources */,
 				872524FA244CCDAC002F6C40 /* FaceTrackingCoordinator.swift in Sources */,
 				8782325B244B7A540030A6EA /* FaceTrackingView.swift in Sources */,
 				872524F3244CCD09002F6C40 /* CoordinatorProtocol.swift in Sources */,
 				87429438244FC8B900289A08 /* ModeCellViewModelProtocol.swift in Sources */,
 				87252513244CDD23002F6C40 /* ErrorHelper.swift in Sources */,
 				872524D0244CAA6D002F6C40 /* FaceTrackingViewProtocol.swift in Sources */,
-				8700E8DD244F86C500FF828D /* ConfigureSession.swift in Sources */,
+				8700E8DD244F86C500FF828D /* ConfigureARSession.swift in Sources */,
+				8791A2AC2459FB30003F6F89 /* MetalScenePreviewProtocol.swift in Sources */,
 				87429434244F888300289A08 /* FetchModes.swift in Sources */,
+				87B3391A2459D8E500EA0616 /* MetalScenePreview.swift in Sources */,
 				877B82E2244B78420036B550 /* SceneDelegate.swift in Sources */,
 				872524DA244CAD3E002F6C40 /* FaceTrackingModeCell.swift in Sources */,
 				872524E2244CB943002F6C40 /* FaceTrackingModesSizing.swift in Sources */,
 				87429432244F882900289A08 /* FetchModesProtocol.swift in Sources */,
 				872524CA244CA83C002F6C40 /* FaceTrackingModesView.swift in Sources */,
-				8700E8D9244F83B200FF828D /* ConfigureSessionProtocol.swift in Sources */,
+				8700E8D9244F83B200FF828D /* ConfigureARSessionProtocol.swift in Sources */,
 				87252511244CDCE5002F6C40 /* ErrorHelperProtocol.swift in Sources */,
 				8700E8D7244F837300FF828D /* ProcessSceneProtocol.swift in Sources */,
 			);
@@ -701,7 +789,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution: Alexey Gross (G2E9B4GL2W)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = G2E9B4GL2W;
 				INFOPLIST_FILE = AGFaceTracking/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -711,6 +801,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gross.test;
 				PRODUCT_NAME = "Face Tracking";
+				PROVISIONING_PROFILE_SPECIFIER = "Test App Provisioning (Distribution)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -720,7 +811,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution: Alexey Gross (G2E9B4GL2W)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = G2E9B4GL2W;
 				INFOPLIST_FILE = AGFaceTracking/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -730,6 +823,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gross.test;
 				PRODUCT_NAME = "Face Tracking";
+				PROVISIONING_PROFILE_SPECIFIER = "Test App Provisioning (Distribution)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

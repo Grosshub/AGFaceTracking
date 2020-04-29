@@ -14,10 +14,12 @@ class FetchModes: FetchModesProtocol {
     
     private let faceTrackingModes: [FaceTrackingMode] = {
         
-        return [FaceTrackingMode(name: "None", type: .none),
+        return [FaceTrackingMode(name: "No effect", type: .noEffect),
                 FaceTrackingMode(name: "3D content", type: .put3DmodelOnFace),
                 FaceTrackingMode(name: "2D texture", type: .put2DMaskOnFace),
-                FaceTrackingMode(name: "Blend shapes", type: .animateWithBlendShapes)]
+                FaceTrackingMode(name: "Blend shapes", type: .animateWithBlendShapes),
+                FaceTrackingMode(name: "Remove background", type: .removeBackground),
+                FaceTrackingMode(name: "Picture background", type: .pictureBackground)]
     }()
     
     func all() -> AnyPublisher<[FaceTrackingMode], Never> {

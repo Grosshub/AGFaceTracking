@@ -46,8 +46,15 @@ class ProcessScene: ProcessSceneProtocol {
             originalJawY = jawNode.position.y
             return CurrentValueSubject(node).eraseToAnyPublisher()
 
-        case .some(.none):
+        case .some(.noEffect):
             return CurrentValueSubject(nil).eraseToAnyPublisher()
+            
+        case .removeBackground:
+            return Fail(error: .unknown).eraseToAnyPublisher()
+            
+        case .pictureBackground:
+            return Fail(error: .unknown).eraseToAnyPublisher()
+            
         case .none:
             return Fail(error: .unknown).eraseToAnyPublisher()
         }

@@ -10,5 +10,5 @@ import UIKit
 
 /// Needed for layout calculationg in Face Tracking mode view
 enum FaceTrackingModesSizing {
-    static let height: CGFloat = 120.0
+    static let height: CGFloat = 140.0
 }

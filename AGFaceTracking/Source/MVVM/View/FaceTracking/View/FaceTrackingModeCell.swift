@@ -31,6 +31,7 @@ class FaceTrackingModeCell: UICollectionViewCell {
         nameLabel.layer.shadowColor = UIColor.cyan.cgColor
         nameLabel.layer.shadowRadius = 10
         nameLabel.font = UIFont(name: "AvenirNext-Regular", size: 13.0)
+        nameLabel.numberOfLines = 0
         addSubview(nameLabel)
     }
     
@@ -45,11 +46,6 @@ extension FaceTrackingModeCell {
     func update(with viewModel: ModeCellViewModelProtocol) {
         
         self.viewModel = viewModel
-        
-//        viewModel.mode?.$isSelected.assign(to: \.isSelected, on: self)
-//        viewModel.mode?.$isSelected.sink { newValue in
-//            print("123!")
-//        }
         
         nameLabel.text = viewModel.mode?.name
         preview.image = viewModel.mode?.icon

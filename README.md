@@ -14,7 +14,8 @@ The Face tracking app demonstrates how ARKit allows us to work with front TrueDe
 * Data binding: Combine
 * Programmatically building a UIKit user interface 
 * Protocol-oriented programming style
-* There are currently 2 face effects available
+* There are currently 4 face effects and 2 green screen examples available
+* There 2 types of renderers are used: SceneKit and Metal
 * Developed and tested on iPad
 
 #### Requirements

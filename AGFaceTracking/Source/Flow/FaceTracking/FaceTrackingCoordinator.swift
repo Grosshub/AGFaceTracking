@@ -23,9 +23,10 @@ struct FaceTrackingCoordinator: FaceTrackingCoordinatorProtocol {
         
         let fetchModes = FetchModes()
         let processScene = ProcessScene()
-        let configureSession = ConfigureSession()
+        let configureARSession = ConfigureARSession()
+        let configureMetalScene = ConfigureMetalScene()
         
-        let viewModel = FaceTrackingViewModel(coordinator: self, useCases:[fetchModes, processScene, configureSession])
+        let viewModel = FaceTrackingViewModel(coordinator: self, useCases:[fetchModes, processScene, configureARSession, configureMetalScene])
         let view = FaceTrackingViewController(viewModel: viewModel)
 
         DispatchQueue.main.async {

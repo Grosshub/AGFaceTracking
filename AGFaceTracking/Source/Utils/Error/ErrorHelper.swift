@@ -33,6 +33,8 @@ struct ErrorHelper: ErrorHelperProtocol {
             return "Something goes wrong with a node on the scene"
         case .incorrectBlendShapes:
             return "Blend shapes inner error"
+        case .renderingDisabled:
+            return "Rendering has been disabled"
         case .unknown:
             return "Unknown error"
         }

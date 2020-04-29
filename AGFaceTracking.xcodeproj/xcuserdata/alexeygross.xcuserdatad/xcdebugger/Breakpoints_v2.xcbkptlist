@@ -3,4 +3,102 @@
    uuid = "C41CE886-49BA-4201-B81F-C39E12459BCD"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7AD52C7-1ED8-4414-93AA-7F3E0FCF0826"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AGFaceTracking/Source/MVVM/Model/UseCases/CameraSession/ConfigureMetalScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "configureMetalScene(metalScene:greenScreenImage:renderingEnabled:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F7AD52C7-1ED8-4414-93AA-7F3E0FCF0826 - d32e336a2d9ddd3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Face_Tracking.ConfigureMetalScene.configureMetalScene(metalScene: Face_Tracking.MetalScenePreviewProtocol, greenScreenImage: Swift.Optional&lt;__C.CIImage&gt;, renderingEnabled: Swift.Bool) -&gt; ()"
+                  moduleName = "Face Tracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeygross/Dropbox/Code/Swift/Frameworks/FaceTracking/AGFaceTracking/AGFaceTracking/Source/MVVM/Model/UseCases/CameraSession/ConfigureMetalScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "F7AD52C7-1ED8-4414-93AA-7F3E0FCF0826 - 6282644bc7260c6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Face_Tracking.ConfigureMetalScene.configureMetalScene(metalScene: Face_Tracking.MetalScenePreviewProtocol, greenScreenImage: Swift.Optional&lt;__C.CIImage&gt;, renderingEnabled: Swift.Bool) -&gt; ()"
+                  moduleName = "Face Tracking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexeygross/Dropbox/Code/Swift/Frameworks/FaceTracking/AGFaceTracking/AGFaceTracking/Source/MVVM/Model/UseCases/CameraSession/ConfigureMetalScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "844042F3-62BD-4ABF-B513-66A37F20F069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AGFaceTracking/Source/MVVM/Model/Core/FaceTracking/FaceTrackingMode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "init(name:type:icon:indexPath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDA7D2DE-3BDE-45CE-A87A-A0502E292461"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AGFaceTracking/Source/MVVM/View/FaceTracking/ViewController/FaceTrackingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "configureARSession(renderingEnabled:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BDD1521-2AF4-4916-A67C-CCAF056AEB53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AGFaceTracking/Source/MVVM/View/FaceTracking/ViewController/FaceTrackingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "configureARSession(renderingEnabled:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

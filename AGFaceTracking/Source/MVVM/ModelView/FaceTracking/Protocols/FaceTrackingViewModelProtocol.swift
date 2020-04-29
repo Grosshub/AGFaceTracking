@@ -14,8 +14,11 @@ protocol FaceTrackingViewModelProtocol: ViewModelProtocol {
     /// Returns all available modes
     var modes: [FaceTrackingMode]? { get }
     
+    /// Current renderer to draw AR experience
+    var currentRenderer: RendererType { get }
+    
     /// Use case responsible for AR session configuration
-    var configureSession: ConfigureSessionProtocol? { get }
+    var configureARSession: ConfigureARSessionProtocol? { get }
     
     /// Use case responsible for SceneKit renderer 
     var processScene: ProcessSceneProtocol? { get }

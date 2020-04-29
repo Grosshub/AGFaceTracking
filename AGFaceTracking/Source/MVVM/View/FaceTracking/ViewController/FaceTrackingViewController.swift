@@ -46,7 +46,7 @@ extension FaceTrackingViewController {
         configureUI()
         bind(viewModel: viewModel)
         viewModel.fetchData()
-        configureARSession()
+        prepareRenderer()
     }
 }
 
@@ -76,16 +76,30 @@ extension FaceTrackingViewController {
             self.faceTrackingView.modesView.collectionView.delegate = self
             self.faceTrackingView.modesView.collectionView.dataSource = self
             self.faceTrackingView.modesView.collectionView.register(FaceTrackingModeCell.self, forCellWithReuseIdentifier: "\(FaceTrackingModeCell.self)")
-            
-            self.faceTrackingView.sceneView.delegate = self
         }
     }
     
-    private func configureARSession() {
+    private func prepareRenderer() {
+        
+        if viewModel.currentRenderer == .sceneKit {
+
+            self.faceTrackingView.sceneView.delegate = self
+            configureARSession(renderingEnabled: true)
+            configureMetalSession(renderingEnabled: false)
+            
+        } else if viewModel.currentRenderer == .metalKit {
+
+            self.faceTrackingView.sceneView.delegate = nil
+            configureARSession(renderingEnabled: false)
+            configureMetalSession(renderingEnabled: true)
+        }
+    }
+    
+    private func configureARSession(renderingEnabled: Bool) {
         
         DispatchQueue.main.async {
             self.faceNode = nil
-            self.viewModel.configureSession?.apply(to: self.faceTrackingView.sceneView)
+            self.viewModel.configureARSession?.apply(to: self.faceTrackingView.sceneView, renderingEnabled: renderingEnabled)
                 .sink(receiveCompletion: { completion in
                 
                     switch completion {
@@ -95,10 +109,29 @@ extension FaceTrackingViewController {
                         break
                     }
                 
-                }, receiveValue: { _ in
-                    print("AR session is configured")
+                }, receiveValue: { isConfigured in
+                    print("AR session configuration status: \(isConfigured)")
                 }).cancel()
         }
+    }
+    
+    private func configureMetalSession(renderingEnabled: Bool) {
+
+        self.viewModel.configureMetalScene?.configureMetalScene(metalScene: faceTrackingView.metalSceneView,
+                                                                greenScreenImage: viewModel.currentFaceTrackingMode()?.greenScreenImage,
+                                                                renderingEnabled: renderingEnabled)
+            .sink(receiveCompletion: { completion in
+
+                switch completion {
+                case .failure(let error):
+                    AlertHelper().showAlert(error: error, showIn: self)
+                case .finished:
+                    break
+                }
+                
+            }, receiveValue: { isConfigured in
+                print("Metal session configuration status: \(isConfigured)")
+            }).cancel()
     }
 }
 
@@ -135,7 +168,7 @@ extension FaceTrackingViewController: UICollectionViewDelegate {
             lastCell.update(with: self.viewModel.viewModelForCell(at: row).unselected())
             newCell.update(with: self.viewModel.viewModelForCell(at: indexPath.row).selected())
                 
-            if lastCell != newCell { self.configureARSession() }
+            if lastCell != newCell { self.prepareRenderer() }
         }
     }
 }
@@ -164,6 +197,7 @@ extension FaceTrackingViewController: ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        
         viewModel.processScene?.animateBlendShapes(for: renderer, anchor: anchor, mode: viewModel.currentFaceTrackingMode(), updatedNode: node)
         .sink(receiveCompletion: { completion in
 
